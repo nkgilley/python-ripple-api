@@ -9,4 +9,3 @@ def get_balance(address):
     if response.get('result'):
         if response.get('result') == 'success':
             return float(response['balances'][0]['value'])
-    return False
